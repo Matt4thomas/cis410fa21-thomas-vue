@@ -3,10 +3,11 @@ import App from "./App.vue";
 import axios from "axios";
 
 import myRouter from "./routes.js";
+import theStore from "./store.js";
 
-axios.defaults.baseURL =
-  "https://docs.google.com/document/d/1AU329ZjthGx0DoKfadYyZW6vtAcucDRbIXAtYEn5ddI/edit?usp=sharing";
+axios.defaults.baseURL = "https://cis410-store-api.azurewebsites.net";
 
 const myApp = createApp(App);
 myApp.use(myRouter);
+myApp.use(theStore);
 myApp.mount("#app");
