@@ -19,8 +19,8 @@
             <router-link
               class="nav-link active"
               aria-current="page"
-              to="/movies"
-              >Movies</router-link
+              to="/products"
+              >Products</router-link
             >
           </li>
 

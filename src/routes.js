@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import Home from "./components/Home.vue";
 import Login from "./components/Login.vue";
-import OrderDetail from "./components/OrderDetail.vue";
-import Orders from "./components/Orders.vue";
+import ProductDetail from "./components/ProductDetail.vue";
+import Products from "./components/Products.vue";
 import NotFound from "./components/NotFound.vue";
 import ReviewCreate from "./components/ReviewCreate.vue";
 import Signup from "./components/Signup.vue";
@@ -15,10 +15,10 @@ const router = createRouter({
     { path: "/", component: Home },
     { path: "/account", component: Account },
     { path: "/login", component: Login },
-    { path: "/orders", component: Orders },
+    { path: "/products", component: Products },
     {
-      path: "/orders/:pk",
-      component: OrderDetail,
+      path: "/products/:pk",
+      component: ProductDetail,
       children: [{ path: "review", component: ReviewCreate }],
     },
     { path: "/signup", component: Signup },
