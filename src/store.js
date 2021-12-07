@@ -4,7 +4,7 @@ export default createStore({
   state: {
     token: null,
     user: null,
-    movies: [],
+    orders: [],
   },
   mutations: {
     storeTokenInApp(state, myToken) {
